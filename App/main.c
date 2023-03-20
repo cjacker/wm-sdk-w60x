@@ -21,6 +21,6 @@ void UserMain(void)
 #if DEMO_CONSOLE
 	CreateDemoTask();
 #endif
-//用户自己的task
+  // Put user task here.
 }
 
