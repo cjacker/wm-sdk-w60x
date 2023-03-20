@@ -4,17 +4,22 @@ Forked of latest official Winner Macro W60x SDK v3.04 (Updated at Mar 20 2020).
 
 It can be downloaded from https://www.winnermicro.com/upload/1/editor/1584693446529.zip
 
-# usage
+There are various example codes merged from thingsturn.com and put at `Examples` dir. 
+
+# Usage
 
 Put your codes to `App/main.c`, build and flash it as:
 
 ```
-cd Tools/GNU/
-make
-make flash
+make -C Tools/GNU
+make -C Tools/GNU flash
 ```
 
-# note for latest arm-none-eabi-gcc
+When first time flashing, the `SERIAL_NAME` in `Tools/GNU/download_img.sh` need to be supplied, usually it's `ttyUSB0` or something like that. 
+
+You can also copy codes from `Examples` dir.
+
+# Note for latest arm-none-eabi-gcc
 
 If you encounter `timeval` or `fd_set` redefined error, it due to below codes in `arm-none-eabi/include/sys/types.h` of arm-none-eabi-gcc toolchain. There is no way to undefined this macro and have to define it to 0 when include headers (too many errors need to fix). The simplest way is to comment below lines out.
 
