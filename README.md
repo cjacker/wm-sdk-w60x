@@ -1,12 +1,15 @@
 # wm_sdk_w60x
 
-Forked of latest official Winner Macro W60x SDK G3.4 (Updated at Mar 20 2020).
+Forked of latest official Winner Macro W60x SDK V3.4 (Updated at Mar 20 2020).
 
-NOTE : Version number `G3.04` is identical to `G3.4`.
+NOTE : Upstream version number `G3.04.00` is identical to `V3.4`.
 
 It can be downloaded from https://www.winnermicro.com/upload/1/editor/1584693446529.zip
 
 There are various example codes merged from thingsturn.com and put at `Examples` dir. 
+
+For complete W60x tutorial, please refer to https://github.com/cjacker/opensource-toolchain-w60x.
+
 
 # Usage
 
